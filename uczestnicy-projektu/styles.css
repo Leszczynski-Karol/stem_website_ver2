@@ -1,0 +1,84 @@
+#container {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+#participans {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  margin-left: 3.5%;
+}
+.schoolElement {
+  width: calc(23% - 10px);
+  margin: 10px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.schoolElement:hover {
+  transform: scale(1.02);
+}
+
+.schoolElement img {
+  height: 130px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.schoolElement img:first-child {
+}
+
+.schoolElement h2 {
+  font-size: 20px;
+}
+
+.schoolElement h3 {
+  font-size: 15px;
+  font-weight: normal;
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+
+.schoolElement a {
+  font-size: 15px;
+  padding: 8px;
+  background-color: #e0e2db;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.2s;
+  color: #393d3f;
+}
+
+.schoolElement a:hover {
+  background-color: #b9b9b8;
+}
+
+/* Media Queries */
+@media (max-width: 1791px) {
+  .br {
+    display: none;
+  }
+}
+
+@media (max-width: 1310px) {
+  .schoolElement {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .schoolElement {
+    width: 90%;
+  }
+}
