@@ -16,10 +16,10 @@ function transformToHamburger() {
 
   if (slidingMenu.style.display === "block") {
     slidingMenu.style.display = "none";
-    icon.style.backgroundImage = "url('meta/icons/hamburger.svg')";
+    icon.style.backgroundImage = "url('../meta/icons/hamburger.svg')";
   } else {
     slidingMenu.style.display = "block";
-    icon.style.backgroundImage = "url('meta/icons/close.svg')";
+    icon.style.backgroundImage = "url('../meta/icons/close.svg')";
   }
 }
 

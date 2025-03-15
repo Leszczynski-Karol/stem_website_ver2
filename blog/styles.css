@@ -39,7 +39,7 @@
 }
 @media (max-width: 1000px) {
   #container {
-    margin-left: 7%;
+    margin-left: 5%;
   }
   .element {
     width: 90%;
@@ -48,5 +48,11 @@
     padding: 20px;
     transition: 0.2s;
     text-decoration: none;
+  }
+  .author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
 }

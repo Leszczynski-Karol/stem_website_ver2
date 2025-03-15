@@ -1,0 +1,199 @@
+body {
+  margin-top: 80px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.container a {
+  text-decoration: none;
+  transition: 0.2s;
+  padding: 10px;
+  border-radius: 15px;
+}
+.container a:hover {
+  text-decoration: none;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 53px -25px rgba(57, 61, 63, 1);
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; /* Bez odstępów między divami */
+  width: 75vw;
+  height: 50vw;
+}
+
+.parent div {
+  border-radius: 15px; /* Zaokrąglone krawędzie */
+  background-color: red;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-image: url(images/TurkieBG2.JPG);
+  background-position: center;
+  background-size: cover;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-image: url(images/TurkieBG4.JPG);
+  background-position: center;
+  background-size: cover;
+}
+.div3 {
+  grid-area: 2 / 1 / 3 / 3; /* Łączymy div3 i div4 */
+  background-image: url(images/TurkieBG.JPG);
+  background-position: center;
+  background-size: cover;
+}
+.div5 {
+  grid-area: 1 / 3 / 3 / 4;
+  background-image: url(images/TurkieBG3.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.parentv2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px; /* Bez odstępów między divami */
+  width: 75vw;
+  height: 40vw;
+}
+.parentv2 div {
+  border-radius: 15px; /* Zaokrąglone krawędzie */
+  background-color: red;
+}
+.div1v2 {
+  background-image: url(images/TurkieBG4.JPG);
+
+  background-position: center;
+  background-size: cover;
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+}
+.div2v2 {
+  background-image: url(images/TurkieBG3.JPG);
+  background-position: center;
+  background-size: cover;
+  grid-column: span 2 / span 2;
+  grid-column-start: 3;
+}
+.div4v2 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  background-image: url(images/TurkieBG2.JPG);
+  background-position: center;
+  background-size: cover;
+}
+.div5v2 {
+  grid-column-start: 4;
+  grid-row-start: 2;
+  background-image: url(images/TurkieBG.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.v1 {
+  background-image: url(images/TurkieBG.JPG);
+}
+.v2 {
+  background-image: url(images/TurkieBG.JPG);
+}
+.v3 {
+  background-image: url(images/TurkieBG.JPG);
+}
+.v4 {
+  background-image: url(images/TurkieBG.JPG);
+}
+.v4 {
+  background-image: url(images/TurkieBG.JPG);
+}
+.v3 {
+  background-image: url(images/TurkieBG.JPG);
+}
+.showMoreFrame {
+  display: flex;
+  align-items: end;
+}
+.showMore {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin: 30px;
+  font-weight: bold;
+  padding: 10px 30px 10px 20px;
+  border-radius: 20px;
+}
+.showMore img {
+  width: 25px;
+  filter: invert(100);
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    margin-bottom: 60px;
+  }
+  .parent {
+    width: 93vw;
+    height: 80vh;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjust to 2 columns for responsive layout */
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .parentv2 {
+    width: 93vw;
+    height: 80vh;
+  }
+
+  .showMore {
+    margin: 10px;
+    font-weight: bold;
+    padding: 10px 30px 10px 20px;
+    border-radius: 20px;
+  }
+
+  /* Hide .div5 in .parent */
+  .div5 {
+    display: none;
+  }
+
+  /* Hide .div1v2 in .parentv2 */
+  .div1v2 {
+    display: none;
+  }
+
+  /* Keep .div5v2 visible */
+  .div5v2 {
+    display: block;
+    grid-column: span 2; /* Make it span across both columns */
+    grid-row: span 2; /* Make it span across both rows if needed */
+  }
+
+  /* Adjust remaining divs to fill space */
+  .div2v2 {
+    grid-column: span 2;
+  }
+
+  .div4v2 {
+    grid-column: span 2;
+  }
+}
+.hidden {
+  display: none;
+}
