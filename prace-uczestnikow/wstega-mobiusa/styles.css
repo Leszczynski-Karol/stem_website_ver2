@@ -33,6 +33,7 @@ a {
 .authors {
   display: flex;
   flex-wrap: wrap;
+  font-size: small;
 }
 .author {
   display: flex;
@@ -54,24 +55,38 @@ h2 {
   text-align: justify;
 }
 @media screen and (max-width: 1220px) {
+  #container {
+    margin-top: 150px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 100px;
+  }
   .element {
     display: block;
     width: 90%;
     margin-left: 2.5%;
     padding: 10px;
+    margin-bottom: 0;
   }
   .element img {
     width: 100%;
   }
   #mobiusHeader {
   }
-  .author {
-    margin-right: 0;
+  .authors {
+    display: block;
   }
   .author img {
     width: 30px;
   }
   .content {
+    padding: 0;
     padding-top: 15px;
+    text-align: center;
+  }
+  .text {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
   }
 }

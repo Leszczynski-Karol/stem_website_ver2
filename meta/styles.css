@@ -200,3 +200,6 @@ body {
 .alert img {
   width: 50px;
 }
+.alert:hover {
+  cursor: pointer;
+}

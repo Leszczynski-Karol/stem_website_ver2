@@ -45,9 +45,20 @@ document
   .addEventListener("click", function () {
     englishLanguage();
   });
+document
+  .querySelector(".rightNav img:nth-child(1)")
+  .addEventListener("click", function () {
+    englishLanguage();
+  });
+
 //zmiana strony jezyka na Polski/wyswietlenie alertu a braku tlumaczenia
 document
   .querySelector(".topnav span img:nth-child(2)")
+  .addEventListener("click", function () {
+    polishLanguage();
+  });
+document
+  .querySelector(".rightNav  img:nth-child(2)")
   .addEventListener("click", function () {
     polishLanguage();
   });
@@ -57,9 +68,19 @@ document
   .addEventListener("click", function () {
     turkishLanguage();
   });
+document
+  .querySelector(".rightNav  img:nth-child(3)")
+  .addEventListener("click", function () {
+    turkishLanguage();
+  });
 //zmiana strony jezyka na Rumunski/wyswietlenie alertu a braku tlumaczenia
 document
   .querySelector(".topnav span img:nth-child(4)")
+  .addEventListener("click", function () {
+    romanianLanguage();
+  });
+document
+  .querySelector(".rightNav img:nth-child(4)")
   .addEventListener("click", function () {
     romanianLanguage();
   });
@@ -69,28 +90,33 @@ document
   .addEventListener("click", function () {
     belgiumLanguage();
   });
+document
+  .querySelector(".rightNav  img:nth-child(5)")
+  .addEventListener("click", function () {
+    belgiumLanguage();
+  });
 
 var alert = document.querySelector(".alert");
 //tłumaczenie na wybrany język lub alert o braku dostępnego języka
 function englishLanguage() {
   showAlert(
-    "<img src='meta/icons/close.svg' alt='close'><br>Sorry, english language will be added in the future. "
+    "<img src='../../meta/icons/close.svg' alt='close'><br>Sorry, English language will be added in the future. "
   );
 }
 function polishLanguage() {}
 function turkishLanguage() {
   showAlert(
-    "<img src='meta/icons/close.svg' alt='close'><br>Sorry, turkish language will be added in the future."
+    "<img src='../../meta/icons/close.svg' alt='close'><br>Sorry, Turkish language will be added in the future."
   );
 }
 function romanianLanguage() {
   showAlert(
-    "<img src='meta/icons/close.svg' alt='close'><br>Sorry, rRomanian language will be added in the future."
+    "<img src='../../meta/icons/close.svg' alt='close'><br>Sorry, Romanian language will be added in the future."
   );
 }
 function belgiumLanguage() {
   showAlert(
-    "<img src='meta/icons/close.svg' alt='close'><br>Sorry, belgian language will be added in the future."
+    "<img src='../../meta/icons/close.svg' alt='close'><br>Sorry, Belgian language will be added in the future."
   );
 }
 
