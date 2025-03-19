@@ -64,14 +64,13 @@ h1 {
   background-color: #b9b9b8;
 }
 
-/* Media Queries */
 @media (max-width: 1791px) {
   .br {
     display: none;
   }
 }
 
-@media (max-width: 1310px) {
+@media (max-width: 1270px) {
   .schoolElement {
     width: 45%;
   }
